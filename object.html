@@ -4,45 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS-task</title>
+    <link rel="stylesheet" href="object.css" />
   </head>
   <body>
-    <h3>User object:</h3>
-    <p class="object-display"></p>
+    <div class="display-object">
+      <h3 class="display-object-heading">User object:</h3>
+      <p class="object-display display-object-body"></p>
+    </div>
+    <div class="display-add_key_value">
+      <h3 class="display-add_key_value-heading">
+        Add new Key & Value and Update a present Key & Value here 👇
+      </h3>
+      <p class="display-add_key_value-para">
+        Key:
+        <input
+          type="text"
+          class="input-key input"
+          value=""
+          placeholder="key of an object"
+        />
+      </p>
+      <p class="display-add_key_value-para">
+        Value:
+        <input
+          type="text"
+          class="input-value input"
+          value=""
+          placeholder="value of an object"
+        />
+      </p>
 
-    <h3>Add new Key & Value and Update a present Key & Value here 👇</h3>
-    <p>
-      Key:
-      <input
-        type="text"
-        class="input-key"
-        value=""
-        placeholder="key of an object"
-      />
-    </p>
-    <p>
-      Value:
-      <input
-        type="text"
-        class="input-value"
-        value=""
-        placeholder="value of an object"
-      />
-    </p>
+      <button onclick="addEntry()" style="display: block">Add entry</button>
+    </div>
 
-    <button onclick="addEntry()">Add entry</button>
+    <div class="display-delete">
+      <h3 class="display-delete-heading">
+        Delete an object entity which you want to delete
+      </h3>
+      <p class="display-delete-key_value">
+        key:
+        <input
+          type="text"
+          class="input-delete-key input"
+          value=""
+          placeholder="key you want delete"
+        />
+      </p>
 
-    <h3>Delete an object entity which you want to delete</h3>
-    <p>
-      key:
-      <input
-        type="text"
-        class="input-delete-key"
-        value=""
-        placeholder="key you want delete"
-      />
-    </p>
-
-    <button onclick="deleteKeyValue()">Delete entry</button>
+      <button onclick="deleteKeyValue()" style="display: block">
+        Delete entry
+      </button>
+    </div>
 
     <script src="object.js"></script>
   </body>
