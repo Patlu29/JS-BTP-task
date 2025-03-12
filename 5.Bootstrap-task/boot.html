@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .back-bg {
+        background: url("../5.Bootstrap-task/InShot_20250312_232257755.jpg");
+        background-size: cover;
+        height: 100vh;
+      }
+      .navParant,
+      .formParant {
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body class="img-fluid">
+    <div class="back-bg container-sm">
+      <nav class="navbar bg-transparent navParant">
+        <div class="container-fluid">
+          <a class="navbar-brand">WELCOME TO CD</a>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div
+        class="container-sm border shadow-lg bg-transparent rounded formParant mt-5"
+      >
+        <h3>LOGIN 👉</h3>
+        <form action="#" class="form p-2">
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              name="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="pwd"
+              placeholder="Enter password"
+              name="pswd"
+            />
+          </div>
+          <div class="form-check mb-3">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" />
+              Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="d-flex p-1">
+          <div class="card" style="width: 18rem">
+            <img
+              src="../5.Bootstrap-task/soringed.png"
+              class="card-img-top"
+              alt="sorined"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                SoaringEd is Crystal Delta’s comprehensive portfolio of industry
+                leading education products and services.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 19rem">
+            <img
+              src="../5.Bootstrap-task/loree.png"
+              class="card-img-top rounded"
+              alt="loree"
+              style="width: 80px"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Build accessible, responsive, engaging learning experiences
+                directly within Canvas LMS with ease.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../5.Bootstrap-task/crane.png"
+              class="card-img-top"
+              alt="crane"
+              style="height: 70px"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Crane is a leading service for data relocation, specialising in
+                delivering accurate, and efficient course migration & archiving
+                for institutions transitioning to a new LMS.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../5.Bootstrap-task/xened.png"
+              class="card-img-top"
+              alt="xened"
+              style="width: 80px"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
