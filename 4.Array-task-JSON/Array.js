@@ -13,9 +13,11 @@ arrayObject.forEach((a, b, c) => {
 
 // sort
 
-let numbers = [23, 12, 2, 56, 78, "prakash", "akash"]
-numbers.sort()
-console.log(numbers)
+let numbers = [23, 12, 2, 56, 78]
+let words = ["prakash", "akash", "uma", "kali"]
+words.sort()
+numbers.sort((a,b) => (a-b));
+console.log(numbers, words)
 
 // map
 const mapArr = [2, 4, 6, 10];
