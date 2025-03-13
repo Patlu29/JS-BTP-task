@@ -27,6 +27,9 @@
       .formParant {
         backdrop-filter: blur(10px);
       }
+      .cardImg {
+        height: 80px;
+      }
     </style>
   </head>
   <body class="img-fluid">
@@ -88,7 +91,7 @@
           <div class="card bg-transparent" style="width: 18rem">
             <img
               src="../5.Bootstrap-task/soringed.png"
-              class="card-img-top"
+              class="card-img-top cardImg"
               alt="sorined"
             />
             <div class="card-body">
@@ -99,12 +102,16 @@
             </div>
           </div>
           <div class="card bg-transparent" style="width: 19rem">
-            <img
-              src="../5.Bootstrap-task/loree.png"
-              class="card-img-top rounded"
-              alt="loree"
-              style="width: 80px"
-            />
+            <div class="d-flex">
+              <img
+                src="../5.Bootstrap-task/loree.png"
+                class="card-img-top rounded cardImg"
+                alt="loree"
+                style="width: 80px"
+              />
+              <p class="mx-5 pt-4 fs-3">Loree</p>
+            </div>
+
             <div class="card-body">
               <p class="card-text text-center">
                 Build accessible, responsive, engaging learning experiences
@@ -115,9 +122,8 @@
           <div class="card bg-transparent" style="width: 18rem">
             <img
               src="../5.Bootstrap-task/crane.png"
-              class="card-img-top"
+              class="card-img-top cardImg"
               alt="crane"
-              style="height: 70px"
             />
             <div class="card-body">
               <p class="card-text text-center">
@@ -130,14 +136,15 @@
           <div class="card bg-transparent" style="width: 18rem">
             <img
               src="../5.Bootstrap-task/xened.png"
-              class="card-img-top"
+              class="card-img-top cardImg"
               alt="xened"
               style="width: 80px"
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Xen is a customisable full-service Digital Learning platform
+                built for Education & Training Providers, to help you create the
+                next generation of online learning experiences.
               </p>
             </div>
           </div>
